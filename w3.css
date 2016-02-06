@@ -1,4 +1,4 @@
-/* W3.CSS 1.9 by J.E.Refsnes. Do not remove this line. */
+/* W3.CSS 1.93 by J.E.Refsnes. Do not remove this line. */
 *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}
 h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}
@@ -34,7 +34,6 @@ table,th,td{border:none}
 .w3-ripple:active:after{padding:0;margin:0;opacity:1;transition:0s}
 .w3-badge,.w3-tag,.w3-sign{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;font-weight:bold;text-align:center}
 .w3-badge{border-radius:50%}
-.w3-blockquote{margin:0;padding:0.01em 16px;border-left:5px solid #ccc;font-style:italic}
 ul.w3-ul{list-style-type:none;padding:0;margin:0}
 ul.w3-ul li{padding:6px 2px 6px 16px;border-bottom:1px solid #ddd}
 ul.w3-ul li:last-child{border-bottom:none}
@@ -57,10 +56,7 @@ img.w3-image,.w3-image img{max-width:100%;height:auto}
 .w3-sidenav a,.w3-dropnav a{display:block;transition:.3s}
 .w3-dropnav {background-color:#fff}
 .w3-dropnav a:hover{text-decoration:underline !important}
-.w3-tab div{display:none}
-.w3-tab div:target{display:block}
 .w3-modal{z-index:1;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
-.w3-modal:target{display:block}
 .w3-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}.w3-closebtn{text-decoration:none;float:right;font-size:24px;font-weight:bold;color:inherit}
 .w3-closebtn:hover,.w3-closebtn:focus{color:#000;text-decoration:none;cursor:pointer}
 .w3-pagination{display:inline-block;padding:0;margin:0}
@@ -186,6 +182,10 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 .w3-padding-64{padding-top:64px !important;padding-bottom:64px !important}
 .w3-padding-top{padding-top:8px !important}.w3-padding-bottom{padding-bottom:8px !important}
 .w3-padding-left{padding-left:16px !important}.w3-padding-right{padding-right:16px !important}
+.w3-topbar{border-top:6px solid #ccc !important}.w3-bottombar{border-bottom:6px solid #ccc !important}
+.w3-leftbar{border-left:6px solid #ccc !important}.w3-rightbar{border-right:6px solid #ccc !important}
+.w3-border-red{border-color:#ff6060 !important}.w3-border-yellow{border-color:#daa520 !important}
+.w3-border-green{border-color:#66aa66 !important}.w3-border-blue{border-color:#1E90FF !important}
 .w3-row-padding,.w3-row-padding>.w3-half,.w3-row-padding>.w3-third,.w3-row-padding>.w3-twothird,.w3-row-padding>.w3-quarter,.w3-row-padding>.w3-col{padding:0 8px}
 .w3-spin{animation:w3-spin 2s infinite linear;-webkit-animation:w3-spin 2s infinite linear}
 @-webkit-keyframes w3-spin{
@@ -210,27 +210,22 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 -webkit-animation-name:opac;-webkit-animation-duration:4s;animation-name:opac;animation-duration:4s}
 @-webkit-keyframes opac{from{opacity:0} to{opacity:1}}
 @keyframes opac{from{opacity:0} to{opacity:1}}
-/* TOP */
 .w3-animate-top{
 position:relative;-webkit-animation-name:animatetop;-webkit-animation-duration:0.4s;animation-name:animatetop;animation-duration:0.4s}
 @-webkit-keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
 @keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
-/* LEFT */
 .w3-animate-left{
 position:relative;-webkit-animation-name:animateleft;-webkit-animation-duration:0.4s;animation-name:animateleft;animation-duration:0.4s}
 @-webkit-keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
 @keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
-/* RIGHT */
 .w3-animate-right{
 position:relative;-webkit-animation-name:animateright;-webkit-animation-duration:0.4s;animation-name:animateright;animation-duration:0.4s}
 @-webkit-keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
 @keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
-/* BOTTOM */
 .w3-animate-bottom{
 position:relative;-webkit-animation-name:animatebottom;-webkit-animation-duration:0.4s;animation-name:animatebottom;animation-duration:0.4s}
 @-webkit-keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0px;opacity:1}}
 @keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
-/* ZOOM */
 .w3-animate-zoom {-webkit-animation-name:zoom;-webkit-animation-duration:0.6s;animation-name:animatezoom;animation-duration:0.6s}
 @-webkit-keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
 @keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
