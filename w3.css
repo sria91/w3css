@@ -1,4 +1,4 @@
-/* W3.CSS 2.5 by Jan Egil and Borge Refsnes. Do not remove this line */
+/* W3.CSS 2.6 by Jan Egil and Borge Refsnes. Do not remove this line */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -350,7 +350,7 @@ img.w3-image,.w3-image img {
   opacity: 0.8
 }
 
-.w3-btn,.w3-btn-floating,.w3-btn-floating-large,.w3-hover-shadow,.w3-hover-opacity,
+.w3-btn,.w3-btn-floating,.w3-btn-floating-large,.w3-btn-block,.w3-hover-shadow,.w3-hover-opacity,
 .w3-navbar a,.w3-sidenav a,.w3-dropnav a,.w3-pagination li a,.w3-hoverable tbody tr,.w3-hoverable li,.w3-accordion-content a,.w3-dropdown-content a,.w3-dropdown-click:hover,.w3-dropdown-hover:hover,.w3-opennav,.w3-closenav,.w3-closebtn,
 .w3-hover-amber,.w3-hover-aqua,.w3-hover-blue,.w3-hover-light-blue,.w3-hover-brown,.w3-hover-cyan,.w3-hover-blue-grey,.w3-hover-green,.w3-hover-light-green,.w3-hover-indigo,.w3-hover-khaki,.w3-hover-lime,.w3-hover-orange,.w3-hover-deep-orange,.w3-hover-pink,
 .w3-hover-purple,.w3-hover-deep-purple,.w3-hover-red,.w3-hover-sand,.w3-hover-teal,.w3-hover-yellow,.w3-hover-white,.w3-hover-black,.w3-hover-grey,.w3-hover-light-grey,.w3-hover-dark-grey,.w3-hover-text-amber,.w3-hover-text-aqua,.w3-hover-text-blue,.w3-hover-text-light-blue,
@@ -589,9 +589,7 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
   overflow-x: auto
 }
 
-.w3-container-4:after,.w3-container-8:after,.w3-container-12:after,.w3-container:after,.w3-container-16:after,
-.w3-container-24:after,.w3-container-32:after,.w3-container-48:after,.w3-container-64:after,
-.w3-row:after,.w3-row-padding:after,.w3-topnav:after,.w3-clear:after,.w3-btn-group:before,.w3-btn-group:after {
+.w3-container:after,.w3-row:after,.w3-row-padding:after,.w3-topnav:after,.w3-clear:after,.w3-btn-group:before,.w3-btn-group:after {
   content: "";
   display: table;
   clear: both
@@ -773,14 +771,22 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 
 @media (max-width:600px) {
   .w3-modal-content {
-    margin: 50px 10px 10px 10px;
+    margin: 0 10px;
     width: auto!important
+  }
+
+  .w3-modal {
+    padding-top: 30px
   }
 }
 
 @media (max-width:768px) {
   .w3-modal-content {
     width: 500px
+  }
+
+  .w3-modal {
+    padding-top: 50px
   }
 }
 
@@ -1041,55 +1047,35 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
   border-right: 1px solid #ccc!important
 }
 
-.w3-section-4 {
-  margin-top: 4px;
-  margin-bottom: 4px
-}
-
-.w3-section-8 {
-  margin-top: 8px;
-  margin-bottom: 8px
-}
-
-.w3-section-12 {
-  margin-top: 12px;
-  margin-bottom: 12px
-}
-
-.w3-section,.w3-section-16,.w3.paragraph {
-  margin-top: 16px;
-  margin-bottom: 16px
-}
-
-.w3-section-24 {
-  margin-top: 24px;
-  margin-bottom: 24px
-}
-
-.w3-section-32 {
-  margin-top: 32px;
-  margin-bottom: 32px
-}
-
-.w3-section-48 {
-  margin-top: 48px;
-  margin-bottom: 48px
-}
-
-.w3-section-64 {
-  margin-top: 64px;
-  margin-bottom: 64px
-}
-
-.w3-section-128 {
-  margin-top: 128px;
-  margin-bottom: 128px
+.w3-margin {
+  margin: 16px!important
 }
 
 .w3-margin-0 {
   margin: 0!important
 }
 
+.w3-margin-top {
+  margin-top: 16px!important
+}
+
+.w3-margin-bottom {
+  margin-bottom: 16px!important
+}
+
+.w3-margin-left {
+  margin-left: 16px!important
+}
+
+.w3-margin-right {
+  margin-right: 16px!important
+}
+
+.w3-section {
+  margin-top: 16px!important;
+  margin-bottom: 16px!important
+}
+/* Might be removed in a later version */
 .w3-margin-4 {
   margin: 4px!important
 }
@@ -1102,7 +1088,7 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
   margin: 12px!important
 }
 
-.w3-margin-16,.w3-margin {
+.w3-margin-16 {
   margin: 16px!important
 }
 
@@ -1121,7 +1107,7 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 .w3-margin-64 {
   margin: 64px!important
 }
-
+/* End remove */
 .w3-padding-tiny {
   padding: 2px 4px!important
 }
@@ -1150,69 +1136,93 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
   padding: 32px 64px!important
 }
 
-.w3-margin-top {
-  margin-top: 16px!important
+.w3-padding-4,.w3-padding-hor-4 {
+  padding-top: 4px!important;
+  padding-bottom: 4px!important
 }
 
-.w3-margin-bottom {
-  margin-bottom: 16px!important
+.w3-padding-8,.w3-padding-hor-8 {
+  padding-top: 8px!important;
+  padding-bottom: 8px!important
 }
 
-.w3-margin-left {
-  margin-left: 16px!important
+.w3-padding-12,.w3-padding-hor-12 {
+  padding-top: 12px!important;
+  padding-bottom: 12px!important
 }
 
-.w3-margin-right {
-  margin-right: 16px!important
+.w3-padding-16,.w3-padding-hor-16 {
+  padding-top: 16px!important;
+  padding-bottom: 16px!important
+}
+
+.w3-padding-24,.w3-padding-hor-24 {
+  padding-top: 24px!important;
+  padding-bottom: 24px!important
+}
+
+.w3-padding-32,.w3-padding-hor-32 {
+  padding-top: 32px!important;
+  padding-bottom: 32px!important
+}
+
+.w3-padding-48,.w3-padding-hor-48 {
+  padding-top: 48px!important;
+  padding-bottom: 48px!important
+}
+
+.w3-padding-64,.w3-padding-hor-64 {
+  padding-top: 64px!important;
+  padding-bottom: 64px!important
+}
+
+.w3-padding-128,.w3-padding-hor-128 {
+  padding-top: 128px!important;
+  padding-bottom: 128px!important
 }
 
 .w3-padding-0 {
   padding: 0!important
 }
 
-.w3-padding-4 {
-  padding-top: 4px!important;
-  padding-bottom: 4px!important
+.w3-padding-ver-4 {
+  padding-left: 4px!important;
+  padding-right: 4px!important
 }
 
-.w3-padding-8 {
-  padding-top: 8px!important;
-  padding-bottom: 8px!important
+.w3-padding-ver-8 {
+  padding-left: 8px!important;
+  padding-right: 8px!important
 }
 
-.w3-padding-12 {
-  padding-top: 12px!important;
-  padding-bottom: 12px!important
+.w3-padding-ver-12 {
+  padding-left: 12px!important;
+  padding-right: 12px!important
 }
 
-.w3-padding-16 {
-  padding-top: 16px!important;
-  padding-bottom: 16px!important
+.w3-padding-ver-16 {
+  padding-left: 16px!important;
+  padding-right: 16px!important
 }
 
-.w3-padding-24 {
-  padding-top: 24px!important;
-  padding-bottom: 24px!important
+.w3-padding-ver-24 {
+  padding-left: 24px!important;
+  padding-right: 24px!important
 }
 
-.w3-padding-32 {
-  padding-top: 32px!important;
-  padding-bottom: 32px!important
+.w3-padding-ver-32 {
+  padding-left: 32px!important;
+  padding-right: 32px!important
 }
 
-.w3-padding-48 {
-  padding-top: 48px!important;
-  padding-bottom: 48px!important
+.w3-padding-ver-48 {
+  padding-left: 48px!important;
+  padding-right: 48px!important
 }
 
-.w3-padding-64 {
-  padding-top: 64px!important;
-  padding-bottom: 64px!important
-}
-
-.w3-padding-128 {
-  padding-top: 128px!important;
-  padding-bottom: 128px!important
+.w3-padding-ver-64 {
+  padding-left: 64px!important;
+  padding-right: 64px!important
 }
 
 .w3-padding-top {
@@ -1280,36 +1290,8 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
   }
 }
 
-.w3-container-4 {
-  padding: 0.01em 4px
-}
-
-.w3-container-8 {
-  padding: 0.01em 8px
-}
-
-.w3-container-12 {
-  padding: 0.01em 12px
-}
-
-.w3-container,.w3-container-16 {
+.w3-container {
   padding: 0.01em 16px
-}
-
-.w3-container-24 {
-  padding: 0.01em 24px
-}
-
-.w3-container-32 {
-  padding: 0.01em 32px
-}
-
-.w3-container-48 {
-  padding: 0.01em 48px
-}
-
-.w3-container-64 {
-  padding: 0.01em 64px
 }
 
 .w3-example {
